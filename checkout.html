@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>결제 · 굿즈샵</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="header"></div>
+  <main class="container">
+    <h1 class="page-title">결제</h1>
+    <div id="checkout-area">
+      <p class="loading">상품 정보 불러오는 중... <span class="text-sm muted">(최대 12초)</span></p>
+    </div>
+  </main>
+  <div class="footer">© 2026 goods-shop · Toss Payments 테스트 모드</div>
+
+  <!-- Toss Payments SDK (공식 권장 방식) -->
+  <script src="https://js.tosspayments.com/v2/standard"></script>
+
+  <script type="module" src="./js/header.js"></script>
+  <script type="module" src="./js/checkout.js"></script>
+</body>
+</html>

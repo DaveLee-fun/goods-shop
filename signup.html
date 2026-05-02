@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>회원가입 · 굿즈샵</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <div id="header"></div>
+  <main class="container">
+    <form id="signup-form" class="form-card">
+      <h1>회원가입</h1>
+      <div id="alert"></div>
+      <div class="form-row">
+        <input type="email" name="email" placeholder="이메일" required autocomplete="email" />
+      </div>
+      <div class="form-row">
+        <input type="password" name="password" placeholder="비밀번호 (6자 이상)" required minlength="6" autocomplete="new-password" />
+      </div>
+      <button id="submit" type="submit" class="btn btn-primary btn-block">가입하기</button>
+      <p class="form-help">이미 계정이 있나요? <a href="login.html">로그인</a></p>
+    </form>
+  </main>
+  <div class="footer">© 2026 goods-shop</div>
+
+  <script type="module" src="./js/header.js"></script>
+  <script type="module" src="./js/signup.js"></script>
+</body>
+</html>
